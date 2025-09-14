@@ -1,10 +1,10 @@
-# --- Java / Maven (Spring Boot)
-target/
-*.log
-*.class
-*.jar
-*.war
-*.ear
+# # --- Java / Maven (Spring Boot)
+# target/
+# *.log
+# *.class
+# *.jar
+# *.war
+# *.ear
 
 # Maven wrappers (keep scripts, ignore build outputs)
 .mvn/wrapper/maven-wrapper.jar
