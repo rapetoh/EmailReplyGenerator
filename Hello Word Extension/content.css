@@ -1,0 +1,175 @@
+/* AI Reply Button Styles */
+.ai-reply-button {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    user-select: none;
+    min-height: 36px;
+    position: relative;
+    overflow: hidden;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 9999 !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+.ai-reply-button:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ai-reply-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ai-reply-button:focus {
+    outline: 2px solid #4285f4;
+    outline-offset: 2px;
+}
+
+.ai-button-content {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.ai-icon,
+.ai-text {
+    display: inline !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: white !important;
+}
+
+/* Loading state */
+.ai-reply-button.loading {
+    background: linear-gradient(135deg, #9aa0a6 0%, #5f6368 100%);
+    cursor: not-allowed;
+}
+
+.ai-reply-button.loading .ai-icon {
+    animation: spin 1s linear infinite;
+}
+
+/* Loading spinner animation */
+.loading-spinner {
+    animation: spin 1s linear infinite !important;
+    display: inline-block !important;
+}
+
+/* Success state */
+.ai-reply-button.success {
+    background: linear-gradient(135deg, #34a853 0%, #137333 100%);
+}
+
+/* Error state */
+.ai-reply-button.error {
+    background: linear-gradient(135deg, #ea4335 0%, #d33b2c 100%);
+}
+
+/* Animations */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Global spinner animation for inline styles */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .ai-reply-button {
+        padding: 6px 12px;
+        font-size: 12px;
+        min-height: 32px;
+    }
+    
+    .ai-text {
+        display: none;
+    }
+    
+    .ai-icon {
+        font-size: 18px;
+    }
+}
+
+/* Ensure the button doesn't interfere with Gmail's layout */
+.ai-reply-button {
+    z-index: 9999 !important;
+    position: relative !important;
+}
+
+/* Override any Gmail hiding styles */
+.ai-reply-button,
+.ai-reply-button * {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+/* Ensure the button content is visible */
+.ai-button-content {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.ai-icon,
+.ai-text {
+    display: inline !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: white !important;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .ai-reply-button {
+        background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+        color: #e2e8f0;
+    }
+    
+    .ai-reply-button:hover {
+        background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+    }
+}
