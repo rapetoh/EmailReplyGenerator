@@ -1,0 +1,36 @@
+# --- Java / Maven (Spring Boot)
+target/
+*.log
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven wrappers (keep scripts, ignore build outputs)
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# --- Node (React / Extension)
+node_modules/
+dist/
+build/
+.npmrc
+.yarn/*
+.pnp.*
+.cache/
+coverage/
+
+# Env files (never commit secrets)
+.env
+.env.local
+.env.*.local
