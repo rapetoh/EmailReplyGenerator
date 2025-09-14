@@ -12,7 +12,7 @@
 
   "host_permissions": [
     "https://mail.google.com/*",
-    "http://localhost:8081/*"
+    "https://email-reply-generator-nuxc.onrender.com/*"
   ],
 
   
@@ -28,7 +28,19 @@
 
 
   "action": {
-    "default_popup": "hello.html"
+    "default_popup": "hello.html",
+    "default_icon": {
+      "16": "Aireply.png",
+      "32": "Aireply.png",
+      "48": "Aireply.png",
+      "128": "Aireply.png"
+    }
+  },
+  "icons": {
+    "16": "Aireply.png",
+    "32": "Aireply.png",
+    "48": "Aireply.png",
+    "128": "Aireply.png"
   }
 
 

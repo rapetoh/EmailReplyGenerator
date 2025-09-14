@@ -3,7 +3,7 @@ console.log("AI Reply by Roch - Content Script Loaded");
 // Function to generate AI reply using your Spring Boot backend
 async function generateAIReply(originalEmail, tone = "professional") {
     try {
-        const response = await fetch('http://localhost:8081/api/email/generate', {
+        const response = await fetch('https://email-reply-generator-nuxc.onrender.com/api/email/generate', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
