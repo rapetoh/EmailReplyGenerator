@@ -1,0 +1,4 @@
+com\EmailReplyGenrator\Email_Reply_Generator\EmailGeneratorController.class
+com\EmailReplyGenrator\Email_Reply_Generator\EmailGeneratorService.class
+com\EmailReplyGenrator\Email_Reply_Generator\EmailReplyGeneratorApplication.class
+com\EmailReplyGenrator\Email_Reply_Generator\EmailRequest.class
