@@ -1,4 +1,5 @@
 # 🤖 AI Email Reply Generator
+<img width="1120" height="480" alt="Design sans titre (11)" src="https://github.com/user-attachments/assets/dee163cd-0fbc-41cd-9a25-b286695aa377" />
 
 <div align="center">
 
