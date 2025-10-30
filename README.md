@@ -10,7 +10,7 @@
 
 **Intelligent Gmail integration that generates contextual email replies using AI**
 
-[🚀 Quick Start](#-quick-start) • [📖 Features](#-features) • [🛠️ Tech Stack](#️-tech-stack) • [📸 Demo](#-demo) • [🔧 Installation](#-installation)
+[🚀 Quick-Start](#-quick-start) • [📖 Features](#-features) • [🛠️ Tech Stack](#️-tech-stack) • [📸 Demo](#-demo) • [🔧 Installation](#-installation)
 
 </div>
 
